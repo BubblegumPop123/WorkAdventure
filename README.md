@@ -1,3 +1,18 @@
+NOTE: THIS IS THE WORKING EDITION OF WORKADVENTURE
+
+Run:
+
+```
+1. Clone the repository
+2. pip install docker docker-compose
+3. cd to the repository
+4. docker-compose up --build
+5. after all containers have built to localhost ports, gracefully ctrl+c
+5. cp .env.template .env
+6. docker-compose up -d
+7. access play.workadventure.localhost
+```
+
 ![](https://github.com/thecodingmachine/workadventure/workflows/Continuous%20Integration/badge.svg) [![Discord](https://img.shields.io/discord/821338762134290432?label=Discord)](https://discord.gg/G6Xh9ZM9aR)
 
 ![WorkAdventure logo](README-LOGO.svg)
@@ -43,16 +58,8 @@ Install Docker and clone this repository.
 > If you are using Windows, make sure the End-Of-Line character is not modified by the cloning process by setting
 > the `core.autocrlf` setting to false: `git config --global core.autocrlf false`
 
-Run:
 
-```
-cp .env.template .env
-docker-compose up
-```
 
-The environment will start.
-
-You should now be able to browse to http://play.workadventure.localhost/ and see the application.
 You can view the Traefik dashboard at http://traefik.workadventure.localhost
 
 Note: on some OSes, you will need to add this line to your `/etc/hosts` file:
